@@ -1,4 +1,1 @@
-select 
-id as customer_id,
-first_name||'-'||last_name as name
- from raw.jaffle_shop.customers
+select * from {{ref ('stg_customer_2')}}
